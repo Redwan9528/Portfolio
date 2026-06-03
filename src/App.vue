@@ -2,7 +2,10 @@
   <div>
     <nav class="navbar" :class="{ scrolled: isScrolled }">
       <div class="nav-container">
-        <a href="#accueil" class="nav-logo">Redwan<span>.</span></a>
+        <a href="#accueil" class="nav-logo">
+          <span class="mini-logo">RD</span>
+          <span>Redwan</span>
+        </a>
 
         <ul class="nav-menu" :class="{ active: isMenuOpen }">
           <li v-for="item in navItems" :key="item.id">
@@ -23,39 +26,44 @@
     <section id="accueil" class="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <span class="badge">Portfolio S4 - BUT Informatique</span>
+          <span class="badge">Portfolio - BUT Informatique</span>
 
           <h1>
             Redwan DJEDIA <br />
             <span>Développeur Informatique</span>
           </h1>
 
-          <h2>Développement logiciel, Data & futur parcours IA / MLOps</h2>
+          <h2>Développement logiciel, data et objectif IA / MLOps</h2>
 
           <p>
             Étudiant en deuxième année de BUT Informatique à l’Université Sorbonne Paris Nord,
-            je développe progressivement des compétences en développement web, bases de données,
-            analyse des besoins et conception d’applications. Mon objectif est de m’orienter vers
-            l’intelligence artificielle, le Machine Learning et le MLOps.
+            je construis progressivement un profil orienté développement logiciel, applications web,
+            bases de données et exploitation de données. Mon parcours, mes projets et mon stage chez
+            Safran m’amènent aujourd’hui à m’intéresser davantage à l’intelligence artificielle,
+            au Machine Learning et au MLOps.
           </p>
 
           <div class="hero-buttons">
             <a href="#presentation" class="btn btn-primary">Découvrir mon profil</a>
-            <a href="#projets" class="btn btn-secondary">Voir mes projets</a>
+            <a href="/REDWAN-DJEDIA-CV.pdf" target="_blank" class="btn btn-secondary">Voir mon CV</a>
           </div>
         </div>
 
-        <div class="hero-card">
-          <div class="logo-circle">RD</div>
-
-          <div class="hero-stats">
-            <div>
-              <strong>BUT</strong>
-              <span>Informatique</span>
+        <div class="hero-visual">
+          <div class="identity-card">
+            <div class="monogram">
+              <span>R</span>
+              <span>D</span>
             </div>
-            <div>
-              <strong>IA</strong>
-              <span>Objectif futur</span>
+
+            <h3>Redwan DJEDIA</h3>
+            <p>Développeur informatique</p>
+
+            <div class="identity-tags">
+              <span>Vue.js</span>
+              <span>PHP</span>
+              <span>Python</span>
+              <span>IA / MLOps</span>
             </div>
           </div>
         </div>
@@ -66,37 +74,54 @@
       <div class="container">
         <div class="section-header">
           <span class="section-label">01</span>
-          <h2>Présentation personnelle</h2>
-          <p>Mon parcours, mes qualités et mon évolution.</p>
+          <h2>Présentation générale</h2>
+          <p>Un parcours en construction entre développement, data et intelligence artificielle.</p>
         </div>
 
         <div class="about-grid">
           <div class="about-card large">
-            <h3>Mon profil</h3>
+            <h3>Qui suis-je ?</h3>
+
             <p>
-              Je suis Redwan DJEDIA, étudiant en deuxième année de BUT Informatique à l’Université
-              Sorbonne Paris Nord. Je suis actuellement en stage chez Safran en tant que développeur
-              informatique.
+              Je suis actuellement étudiant en deuxième année de BUT Informatique à l’Université
+              Sorbonne Paris Nord. Depuis mon entrée dans la formation, j’ai développé des compétences
+              en programmation, développement web, bases de données, analyse des besoins et gestion de projet.
             </p>
+
             <p>
-              Ma formation m’a permis de développer des compétences en programmation, développement
-              web, bases de données, architecture logicielle, analyse des besoins et travail en équipe.
-              Les projets réalisés m’ont aussi permis de mieux comprendre les attentes d’un projet
-              informatique complet.
+              Les différents projets réalisés, notamment Mnémosyne, m’ont permis de découvrir les
+              contraintes d’un développement collaboratif et de travailler sur une application web complète.
+              J’ai appris à passer d’un besoin à une solution concrète en structurant mon code et en
+              travaillant avec une équipe.
+            </p>
+
+            <p>
+              Mon stage chez Safran a renforcé cette expérience en me confrontant à des problématiques
+              réelles d’entreprise, notamment autour du développement d’outils internes et de l’exploitation
+              de données métier.
+            </p>
+
+            <p>
+              Aujourd’hui, mon projet professionnel s’oriente progressivement vers l’intelligence
+              artificielle, le Machine Learning et le MLOps, qui représentent pour moi la continuité
+              naturelle entre développement logiciel, données et automatisation.
             </p>
           </div>
 
-          <div class="about-card">
-            <h3>Mes qualités</h3>
-            <p>
-              Je suis curieux, autonome, organisé et discipliné. J’aime apprendre de nouvelles
-              technologies, comprendre les problèmes et chercher des solutions concrètes.
-            </p>
+          <div class="about-card profile-side">
+            <h3>Mon profil</h3>
+            <ul class="clean-list">
+              <li>Curieux et autonome</li>
+              <li>Organisé et discipliné</li>
+              <li>À l’aise avec le travail en équipe</li>
+              <li>Intéressé par la data et l’IA</li>
+              <li>Orienté solution et progression</li>
+            </ul>
           </div>
         </div>
 
         <div class="skills">
-          <h3>Compétences techniques</h3>
+          <h3>Compétences</h3>
 
           <div class="skills-grid">
             <div class="skill" v-for="skill in skills" :key="skill.name">
@@ -113,26 +138,26 @@
         <div class="section-header">
           <span class="section-label">02</span>
           <h2>Pourquoi l’informatique ?</h2>
-          <p>Une réflexion personnelle sur mon choix d’orientation.</p>
+          <p>Une orientation qui s’est construite avec les projets et l’expérience.</p>
         </div>
 
         <div class="text-card">
           <p>
-            J’ai choisi l’informatique parce que ce domaine permet de transformer une idée ou un besoin
-            en solution concrète. Ce qui m’intéresse particulièrement, c’est le fait de concevoir,
-            développer et améliorer des outils utiles.
+            J’ai choisi l’informatique parce que c’est un domaine qui permet de créer des outils utiles
+            à partir d’un besoin concret. Ce qui m’intéresse, c’est de comprendre un problème,
+            de le découper, puis de concevoir une solution fonctionnelle.
           </p>
 
           <p>
-            Au fil de ma formation, j’ai compris que l’informatique ne se limite pas au code. Il faut
-            aussi analyser un besoin, organiser son travail, communiquer avec une équipe, tester ses
-            solutions et documenter ses choix.
+            Au fil du BUT, j’ai découvert que l’informatique demande autant de logique que de méthode.
+            Il ne suffit pas que le programme fonctionne : il faut aussi qu’il soit clair, maintenable,
+            organisé et adapté aux utilisateurs.
           </p>
 
           <p>
-            Mon intérêt évolue aujourd’hui vers la donnée, l’intelligence artificielle, le Machine
-            Learning et le MLOps. Ces domaines m’attirent car ils combinent programmation, exploitation
-            des données, automatisation et innovation.
+            Mon intérêt pour l’IA et le MLOps vient de cette envie d’aller plus loin : exploiter les
+            données, automatiser des traitements, créer des modèles intelligents et apprendre à les
+            déployer dans des environnements réels.
           </p>
         </div>
       </div>
@@ -142,8 +167,8 @@
       <div class="container">
         <div class="section-header">
           <span class="section-label">03</span>
-          <h2>Projets et compétences développées</h2>
-          <p>Mes projets les plus importants et ce qu’ils m’ont apporté.</p>
+          <h2>Projets importants</h2>
+          <p>Des projets qui montrent ma progression technique et ma capacité à travailler en équipe.</p>
         </div>
 
         <div class="projects-grid">
@@ -160,7 +185,7 @@
 
               <div class="project-actions">
                 <button class="btn btn-small" @click="openProject(project)">
-                  Voir l’analyse
+                  Voir le détail
                 </button>
 
                 <a
@@ -183,26 +208,22 @@
         <div class="section-header">
           <span class="section-label">04</span>
           <h2>Expérience professionnelle</h2>
-          <p>Mon stage chez Safran et ce qu’il m’apporte.</p>
+          <p>Un premier contact concret avec le développement en entreprise.</p>
         </div>
 
         <div class="text-card">
-          <h3>Développeur Informatique - Safran</h3>
+          <h3>Stage développeur informatique - Safran</h3>
 
           <p>
-            Lors de mon stage chez Safran, j’ai participé au développement d’outils internes
+            Lors de mon stage chez Safran, j’ai travaillé sur le développement d’outils internes
             facilitant l’accès, l’exploitation et l’analyse de données métier.
           </p>
 
           <p>
-            Cette expérience m’a permis de travailler avec des environnements professionnels comme
-            WinDev et WebDev, tout en renforçant mes compétences en analyse des besoins,
-            automatisation et communication avec les utilisateurs.
-          </p>
-
-          <p>
-            Ce stage m’aide à mieux comprendre les attentes d’une entreprise et à faire le lien
-            entre les compétences acquises en BUT Informatique et leur application dans un contexte réel.
+            Cette expérience m’a permis de découvrir un environnement professionnel, de mieux comprendre
+            l’importance de l’analyse des besoins et de proposer des solutions adaptées aux utilisateurs.
+            J’ai également travaillé avec WinDev et WebDev, ce qui m’a permis d’élargir mes compétences
+            au-delà des technologies vues en cours.
           </p>
         </div>
       </div>
@@ -213,31 +234,31 @@
         <div class="section-header">
           <span class="section-label">05</span>
           <h2>Work in progress</h2>
-          <p>Mes acquis actuels et les compétences que je souhaite développer.</p>
+          <p>Ce que je maîtrise aujourd’hui et ce que je souhaite approfondir.</p>
         </div>
 
         <div class="about-grid">
           <div class="about-card">
-            <h3>Ce que je maîtrise mieux aujourd’hui</h3>
+            <h3>Acquis actuels</h3>
             <ul class="clean-list">
-              <li>Développement web</li>
-              <li>Programmation PHP, Python, Java et JavaScript</li>
-              <li>Bases de données SQL</li>
+              <li>Développement web avec Vue.js, HTML, CSS, JavaScript</li>
+              <li>Développement backend avec PHP</li>
+              <li>Programmation avec Python et Java</li>
+              <li>Bases de données SQL, PostgreSQL et SQL Server</li>
+              <li>Architecture MVC et API REST</li>
               <li>Travail collaboratif avec Git/GitHub</li>
-              <li>Analyse des besoins</li>
-              <li>Architecture MVC</li>
             </ul>
           </div>
 
           <div class="about-card">
-            <h3>Ce que je veux approfondir</h3>
+            <h3>Compétences à développer</h3>
             <ul class="clean-list">
               <li>Machine Learning</li>
-              <li>Intelligence Artificielle</li>
+              <li>Intelligence artificielle</li>
               <li>MLOps</li>
               <li>Docker et CI/CD</li>
-              <li>Cloud Computing</li>
-              <li>Déploiement d’applications</li>
+              <li>Cloud computing</li>
+              <li>Déploiement et supervision de modèles IA</li>
             </ul>
           </div>
         </div>
@@ -245,10 +266,9 @@
         <div class="text-card">
           <h3>Plan d’action</h3>
           <p>
-            Pour atteindre mon objectif professionnel, je souhaite approfondir Python, découvrir des
-            bibliothèques de Machine Learning comme Scikit-Learn, TensorFlow ou PyTorch, puis me former
-            progressivement aux pratiques MLOps permettant de déployer et superviser des modèles
-            d’intelligence artificielle en production.
+            Pour atteindre mon objectif, je souhaite approfondir Python, apprendre les bases du Machine
+            Learning avec des bibliothèques comme Scikit-Learn, TensorFlow ou PyTorch, puis découvrir
+            les outils permettant de déployer et suivre des modèles en production.
           </p>
         </div>
       </div>
@@ -258,8 +278,8 @@
       <div class="container">
         <div class="section-header">
           <span class="section-label">06</span>
-          <h2>Mes objectifs</h2>
-          <p>Mes perspectives à court, moyen et long terme.</p>
+          <h2>Objectifs professionnels</h2>
+          <p>Une trajectoire orientée développement, data et IA.</p>
         </div>
 
         <div class="timeline-grid">
@@ -267,27 +287,26 @@
             <span>Court terme</span>
             <h4>Réussir mon BUT Informatique</h4>
             <p>
-              Mon objectif immédiat est de valider mon année, renforcer mes compétences techniques
-              et continuer à progresser dans mes projets universitaires et professionnels.
+              Consolider mes compétences techniques, réussir mes projets universitaires et continuer à
+              progresser grâce à l’expérience professionnelle.
             </p>
           </div>
 
           <div class="timeline-item">
             <span>Moyen terme</span>
-            <h4>Poursuivre vers l’IA, la Data ou le Machine Learning</h4>
+            <h4>Me spécialiser en IA / Data</h4>
             <p>
-              Après le BUT, je souhaite poursuivre mes études dans une formation spécialisée en
-              intelligence artificielle, data science ou Machine Learning.
+              Poursuivre mes études vers une formation orientée intelligence artificielle, data science
+              ou Machine Learning.
             </p>
           </div>
 
           <div class="timeline-item">
             <span>Long terme</span>
-            <h4>Évoluer vers l’IA / MLOps</h4>
+            <h4>Évoluer vers le MLOps</h4>
             <p>
-              À long terme, je souhaite travailler dans les domaines de l’intelligence artificielle,
-              du Machine Learning et du MLOps, afin de concevoir, déployer et superviser des solutions
-              intelligentes à grande échelle.
+              Participer à la conception, au déploiement et à la supervision de solutions intelligentes
+              utilisées dans des environnements réels.
             </p>
           </div>
         </div>
@@ -310,22 +329,25 @@
       <div class="modal-content">
         <button class="close" @click="closeProject">&times;</button>
 
-        <img :src="selectedProject.image" :alt="selectedProject.title" />
+        <div class="project-gallery">
+          <img
+            v-for="photo in selectedProject.gallery"
+            :key="photo"
+            :src="photo"
+            :alt="selectedProject.title"
+          />
+        </div>
 
         <h2>{{ selectedProject.title }}</h2>
-
         <p>{{ selectedProject.description }}</p>
-
-        <h3>Prise de conscience</h3>
-        <p>{{ selectedProject.awareness }}</p>
 
         <h3>Compétences développées</h3>
         <div class="tags">
           <span v-for="tag in selectedProject.tags" :key="tag">{{ tag }}</span>
         </div>
 
-        <h3>Perspective de progression</h3>
-        <p>{{ selectedProject.progress }}</p>
+        <h3>Ce que ce projet m’a apporté</h3>
+        <p>{{ selectedProject.learning }}</p>
 
         <a
           v-if="selectedProject.github"
@@ -346,6 +368,8 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const isMenuOpen = ref(false)
 const isScrolled = ref(false)
 const selectedProject = ref(null)
+
+let observer = null
 
 const navItems = [
   { id: 'accueil', label: 'Accueil', href: '#accueil' },
@@ -380,78 +404,63 @@ const projects = [
   {
     id: 1,
     title: 'Mnémosyne - Application web',
-    short:
-      'Application web permettant de visualiser les parcours et les formations des étudiants.',
+    short: 'Application web permettant de visualiser les parcours et formations des étudiants.',
     description:
       'Mnémosyne est un projet universitaire réalisé en équipe. J’ai travaillé sur l’ensemble du projet : conception, développement backend PHP, architecture MVC, API REST, gestion de la base de données, intégration et travail collaboratif avec Git/GitHub.',
-    awareness:
-      'Ce projet m’a permis de comprendre le fonctionnement d’une application web complète. J’ai pris conscience de l’importance de l’architecture logicielle, de l’organisation du code et de la communication dans un projet en équipe.',
-    progress:
-      'Je souhaite continuer à progresser sur les architectures web modernes, la qualité du code, les API et les bonnes pratiques de développement collaboratif.',
+    learning:
+      'Ce projet m’a permis de comprendre le fonctionnement d’une application web complète. Il m’a aussi appris l’importance de l’architecture logicielle, de la qualité du code et de la coordination dans un projet collectif.',
     github: 'https://github.com/Mnemosyne-S301/Mnemosyne',
-    image:
-      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=800&fit=crop',
-    tags: ['PHP', 'MVC', 'API REST', 'SQL', 'Git', 'GitHub', 'Travail en équipe']
+    image:  'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=800&fit=crop',
+    gallery: ['/images/mnemosyne-1.png', '/images/mnemosyne-2.png', '/images/mnemosyne-3.png'],
+    tags: ['PHP', 'MVC', 'API REST', 'SQL', 'Git', 'GitHub']
   },
   {
     id: 2,
     title: 'Jeu d’échecs en Java',
-    short:
-      'Conception et réalisation d’un jeu d’échecs en programmation orientée objet.',
+    short: 'Conception et réalisation d’un jeu d’échecs en programmation orientée objet.',
     description:
-      'Ce projet avait pour objectif de concevoir un jeu d’échecs en Java. Il m’a permis de travailler la programmation orientée objet, la modélisation UML, la logique métier et le travail en équipe avec Git.',
-    awareness:
-      'J’ai compris que la conception est une étape essentielle avant le développement. Un projet bien modélisé est plus simple à coder, tester et faire évoluer.',
-    progress:
-      'Je souhaite approfondir les design patterns, la qualité du code et la conception logicielle orientée objet.',
-    image:
-      'https://images.unsplash.com/photo-1528819622765-d6bcf132f793?w=1200&h=800&fit=crop',
-    tags: ['Java', 'POO', 'UML', 'Git', 'Logique métier']
+      'Projet Java visant à concevoir un jeu d’échecs complet en utilisant la programmation orientée objet, la modélisation UML et la logique métier.',
+    learning:
+      'Ce projet m’a permis de mieux comprendre l’importance de la conception avant le développement.',
+    image:  'https://images.unsplash.com/photo-1528819622765-d6bcf132f793?w=1200&h=800&fit=crop',
+    gallery: ['/images/echecs-1.png', '/images/echecs-2.png'],
+    tags: ['Java', 'POO', 'UML', 'Git']
   },
   {
     id: 3,
     title: 'Simulation d’un réseau social en Python',
-    short:
-      'Projet visant à simuler un réseau social et manipuler des structures de données.',
+    short: 'Projet Python permettant de manipuler des structures de données.',
     description:
-      'Ce projet m’a permis de mettre en pratique les bases de l’algorithmique et du langage Python à travers la simulation d’interactions entre utilisateurs.',
-    awareness:
-      'J’ai compris l’importance du choix des structures de données et de l’organisation du programme pour résoudre efficacement un problème.',
-    progress:
-      'Je souhaite approfondir les algorithmes, les graphes et leur lien avec l’analyse de données.',
-    image:
-      'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop',
-    tags: ['Python', 'Algorithmique', 'Structures de données', 'Résolution de problèmes']
+      'Projet Python permettant de simuler des interactions entre utilisateurs afin de mettre en pratique l’algorithmique et les structures de données.',
+    learning:
+      'J’ai mieux compris l’importance du choix des structures de données pour résoudre efficacement un problème.',
+    image:'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop',
+    gallery: ['/images/python-1.png', '/images/python-2.png'],
+    tags: ['Python', 'Algorithmique', 'Structures de données']
   },
   {
     id: 4,
     title: 'Base de données PostgreSQL',
-    short:
-      'Conception, modélisation et exploitation d’une base de données relationnelle.',
+    short: 'Conception, modélisation et exploitation d’une base relationnelle.',
     description:
-      'Ce projet m’a permis de travailler sur la conception d’une base de données, la modélisation, les requêtes SQL et l’exploitation de données.',
-    awareness:
-      'J’ai compris qu’une base de données bien conçue facilite l’exploitation, l’analyse et la fiabilité des informations.',
-    progress:
-      'Je souhaite renforcer mes compétences en SQL avancé, optimisation de requêtes et exploitation de données.',
-    image:
-      'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=1200&h=800&fit=crop',
-    tags: ['SQL', 'PostgreSQL', 'Modélisation', 'Base de données']
+      'Projet de base de données portant sur la modélisation, la création de tables, les requêtes SQL et l’exploitation de données.',
+    learning:
+      'J’ai compris qu’une base bien conçue facilite l’analyse et fiabilise les informations.',
+    image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=1200&h=800&fit=crop',
+    gallery: ['/images/database-1.png', '/images/database-2.png'],
+    tags: ['SQL', 'PostgreSQL', 'Modélisation']
   },
   {
     id: 5,
     title: 'Stage développeur informatique - Safran',
-    short:
-      'Développement d’outils internes et automatisation de processus métier.',
+    short: 'Développement d’outils internes et automatisation de processus métier.',
     description:
-      'Durant mon stage chez Safran, j’ai participé au développement d’outils facilitant l’accès et l’exploitation de données métier. J’ai travaillé avec des environnements comme WinDev et WebDev.',
-    awareness:
-      'Cette expérience m’a permis de découvrir les contraintes du développement en entreprise, l’importance de l’analyse des besoins et la nécessité de proposer des solutions adaptées aux utilisateurs.',
-    progress:
-      'Je souhaite poursuivre vers des projets mêlant développement, data, automatisation et intelligence artificielle.',
-    image:
-      'https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=1200&h=800&fit=crop',
-    tags: ['WinDev', 'WebDev', 'Analyse métier', 'Automatisation', 'Données']
+      'Durant mon stage chez Safran, j’ai participé au développement d’outils facilitant l’accès et l’exploitation de données métier.',
+    learning:
+      'Cette expérience m’a permis de découvrir les contraintes du développement en entreprise et l’importance de l’analyse des besoins.',
+    image: 'https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=1200&h=800&fit=crop',
+    gallery: ['/images/safran-1.png', '/images/safran-2.png'],
+    tags: ['WinDev', 'WebDev', 'Analyse métier', 'Automatisation']
   }
 ]
 
@@ -480,9 +489,31 @@ const handleScroll = () => {
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
   handleScroll()
+
+  observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show')
+        }
+      })
+    },
+    { threshold: 0.15 }
+  )
+
+  document
+    .querySelectorAll('.section, .project-card, .about-card, .text-card, .timeline-item, .skills')
+    .forEach(element => {
+      element.classList.add('reveal')
+      observer.observe(element)
+    })
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+
+  if (observer) {
+    observer.disconnect()
+  }
 })
 </script>
