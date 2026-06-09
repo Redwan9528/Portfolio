@@ -411,7 +411,7 @@ const projects = [
       'Ce projet m’a permis de comprendre le fonctionnement d’une application web complète. Il m’a aussi appris l’importance de l’architecture logicielle, de la qualité du code et de la coordination dans un projet collectif.',
     github: 'https://github.com/Mnemosyne-S301/Mnemosyne',
     image:  'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=800&fit=crop',
-    gallery: ['/images/mnemosyne-1.png', '/images/mnemosyne-2.png', '/images/mnemosyne-3.png'],
+    gallery: ['/images/mnemosyne-1.png', '/images/mnemosyne-2.png'],
     tags: ['PHP', 'MVC', 'API REST', 'SQL', 'Git', 'GitHub']
   },
   {
