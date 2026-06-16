@@ -60,10 +60,7 @@
             <p>Développeur informatique</p>
 
             <div class="identity-tags">
-              <span>Vue.js</span>
-              <span>PHP</span>
-              <span>Python</span>
-              <span>IA / MLOps</span>
+
             </div>
           </div>
         </div>
@@ -157,7 +154,7 @@
           <p>
             Mon intérêt pour l’IA et le MLOps vient de cette envie d’aller plus loin : exploiter les
             données, automatiser des traitements, créer des modèles intelligents et apprendre à les
-            déployer dans des environnements réels.
+            déployer dans des environnements réels. C'est le futur de l'informatique !
           </p>
         </div>
       </div>
@@ -317,9 +314,8 @@
       <div class="footer-links">
         <a href="mailto:redwandjedia23@gmail.com">Email</a>
         <a href="https://github.com/Redwan9528" target="_blank">GitHub</a>
-        <a href="https://github.com/Mnemosyne-S301/Mnemosyne" target="_blank">Mnémosyne</a>
         <a href="https://linkedin.com/in/redwan-djedia" target="_blank">LinkedIn</a>
-        <a href="/CV-REDWAN-DJEDIA.pdf" target="_blank">CV</a>
+        <a href="/REDWAN-DJEDIA-CV.pdf" target="_blank">CV</a>
       </div>
 
       <p>© 2026 DJEDIA Redwan - Portfolio S4 BUT Informatique</p>
@@ -423,7 +419,7 @@ const projects = [
     learning:
       'Ce projet m’a permis de mieux comprendre l’importance de la conception avant le développement.',
     image:  'https://images.unsplash.com/photo-1528819622765-d6bcf132f793?w=1200&h=800&fit=crop',
-    gallery: ['/images/echecs-1.png', '/images/echecs-2.png'],
+    gallery: [],
     tags: ['Java', 'POO', 'UML', 'Git']
   },
   {
@@ -435,7 +431,7 @@ const projects = [
     learning:
       'J’ai mieux compris l’importance du choix des structures de données pour résoudre efficacement un problème.',
     image:'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop',
-    gallery: ['/images/python-1.png', '/images/python-2.png'],
+    gallery: [],
     tags: ['Python', 'Algorithmique', 'Structures de données']
   },
   {
@@ -447,7 +443,7 @@ const projects = [
     learning:
       'J’ai compris qu’une base bien conçue facilite l’analyse et fiabilise les informations.',
     image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=1200&h=800&fit=crop',
-    gallery: ['/images/database-1.png', '/images/database-2.png'],
+    gallery: [],
     tags: ['SQL', 'PostgreSQL', 'Modélisation']
   },
   {
@@ -459,7 +455,7 @@ const projects = [
     learning:
       'Cette expérience m’a permis de découvrir les contraintes du développement en entreprise et l’importance de l’analyse des besoins.',
     image: 'https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=1200&h=800&fit=crop',
-    gallery: ['/images/safran-1.png', '/images/safran-2.png'],
+    gallery: [],
     tags: ['WinDev', 'WebDev', 'Analyse métier', 'Automatisation']
   }
 ]
