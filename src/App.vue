@@ -33,15 +33,8 @@
             <span>Développeur Informatique</span>
           </h1>
 
-          <h2>Développement logiciel, data et objectif IA / MLOps</h2>
-
-          <p>
-            Étudiant en deuxième année de BUT Informatique à l’Université Sorbonne Paris Nord,
-            je construis progressivement un profil orienté développement logiciel, applications web,
-            bases de données et exploitation de données. Mon parcours, mes projets et mon stage chez
-            Safran m’amènent aujourd’hui à m’intéresser davantage à l’intelligence artificielle,
-            au Machine Learning et au MLOps.
-          </p>
+          
+          
 
           <div class="hero-buttons">
             <a href="#presentation" class="btn btn-primary">Découvrir mon profil</a>
@@ -128,6 +121,36 @@
           </div>
         </div>
       </div>
+      <div class="container">
+    <div class="about-card">
+  <h3>Qualités</h3>
+
+  <div class="qualities-grid">
+    <div class="quality-card">
+      <h4>Curieux</h4>
+      <p>
+        J'aime apprendre de nouvelles choses et notamment découvrir de nouvelles technologies.
+        Cette curiosité me pousse à effectuer une veille informatique régulière et
+        à m'intéresser particulièrement au domaine de l'intelligence artificielle.
+        Mon objectif est de réaliser plusieurs projets personnels dans ce domaine
+        afin d'approfondir mes connaissances et développer une expérience concrète.
+      </p>
+    </div>
+
+    <div class="quality-card">
+      <h4>Autonome</h4>
+      <p>
+        L’autonomie est une qualité que j’ai développée tout au long de ma
+        formation. Les différentes SAE m’ont particulièrement aidé à progresser
+        dans ce domaine, car elles demandent de travailler de manière autonome
+        sur des projets concrets. J’ai appris à rechercher des informations,
+        résoudre des problèmes techniques et organiser mon travail afin
+        d’atteindre les objectifs fixés.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
     </section>
 
     <section id="informatique" class="section">

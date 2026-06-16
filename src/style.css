@@ -861,3 +861,58 @@ button {
 .project-card img {
   background: #eef2ff;
 }
+
+.qualities {
+  margin-top: 32px;
+}
+
+.qualities h3 {
+  color: var(--primary-dark);
+  margin-bottom: 18px;
+  font-size: 1.35rem;
+}
+
+.qualities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.quality-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+  transition: 0.25s ease;
+}
+
+.quality-card:hover {
+  transform: translateY(-5px);
+}
+
+.quality-card h4 {
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+}
+
+.quality-card p {
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .qualities-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.about-card {
+  margin-top: 24px;
+}
+.qualities {
+  max-width: 1180px;
+  margin: 32px auto 0;
+  padding: 0 22px;
+}
