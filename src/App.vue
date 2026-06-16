@@ -38,7 +38,7 @@
 
           <div class="hero-buttons">
             <a href="#presentation" class="btn btn-primary">Découvrir mon profil</a>
-            <a href="/REDWAN-DJEDIA-CV.pdf" target="_blank" class="btn btn-secondary">Voir mon CV</a>
+            <a href="./REDWAN-DJEDIA-CV.pdf" target="_blank" class="btn btn-secondary">Voir mon CV</a>
           </div>
         </div>
 
@@ -338,7 +338,7 @@
         <a href="mailto:redwandjedia23@gmail.com">Email</a>
         <a href="https://github.com/Redwan9528" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/redwan-djedia" target="_blank">LinkedIn</a>
-        <a href="/REDWAN-DJEDIA-CV.pdf" target="_blank">CV</a>
+        <a href="./REDWAN-DJEDIA-CV.pdf" target="_blank">CV</a>
       </div>
 
       <p>© 2026 DJEDIA Redwan - Portfolio S4 BUT Informatique</p>
@@ -349,12 +349,12 @@
         <button class="close" @click="closeProject">&times;</button>
 
         <div class="project-gallery">
-          <img
-            v-for="photo in selectedProject.gallery"
-            :key="photo"
-            :src="photo"
-            :alt="selectedProject.title"
-          />
+        <img
+      v-for="(photo, index) in selectedProject?.gallery || []"
+      :key="index"
+      :src="photo"
+      alt="image projet"
+        />
         </div>
 
         <h2>{{ selectedProject.title }}</h2>
