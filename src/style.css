@@ -2055,3 +2055,65 @@ a {
     display: none;
   }
 }
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+  align-items: stretch;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px;
+}
+
+.project-actions {
+  margin-top: auto;
+  padding-top: 18px;
+}
+/* Toutes les cartes SAÉ d'une ligne ont la même hauteur */
+.sae-projects-grid {
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+}
+
+/* La carte occupe toute la hauteur disponible */
+.sae-project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Le contenu intérieur occupe l'espace restant */
+.sae-project-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+/* Le résumé absorbe l'espace vide */
+.sae-project-body .project-summary {
+  flex: 1;
+}
+
+/* Le bouton reste aligné en bas de chaque carte */
+.sae-project-body .details-button {
+  margin-top: 22px;
+}
